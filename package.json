@@ -1,0 +1,15 @@
+{
+  "name": "img-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "static -p 1337 -a 192.168.1.46 ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.18.0"
+  }
+}

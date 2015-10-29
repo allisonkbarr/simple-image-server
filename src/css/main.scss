@@ -1,0 +1,451 @@
+/* Colors */
+
+$font-blue: #3299CC;
+$font-gray: #83838a;
+$bg-blue: #6FB8DC;
+$md-blue: #ADD6EB;
+$lt-blue: #EBF5FA;
+$white: #fff;
+$black: #000;
+
+$md-gray: #e1e1e8;
+$bg-gray: #f7f7f9;
+
+
+
+/* General */
+
+body {
+  color: $font-gray;
+}
+
+h1, h2, h3, h4 {
+  color: $font-blue;
+}
+
+h2 {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.highlight {
+  background-color: $bg-gray;
+  border: 1px solid $md-gray;
+  border-radius: 4px;
+  padding: 9px 14px;
+}
+
+/* Buttons and Links */
+
+a {
+  color: $font-blue;
+
+  &:hover {
+    color: $font-blue;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $font-blue;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $font-blue;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  color: white;
+  text-shadow: none;
+  background-image: none;
+  transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+  background-color: $bg-blue;
+  border: 1px solid $bg-blue;
+
+  &:hover {
+    background-image: none;
+    background-color: $md-blue;
+    color: white;
+    border: 1px solid $md-blue;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+
+
+/* Header & Nav */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  justify-content: space-between;
+
+  #flex-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    color: $font-blue;
+    margin: 0 20px 0 0px;
+    min-width: 207px;
+    font-size: 24px;
+  }
+
+  .btn {
+    margin-left: auto;
+    min-width: 63px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      font-size: 16px;
+
+      &:hover {
+        border-bottom: 1px solid $font-blue;
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 1px solid $font-blue;
+}
+
+
+
+/* Font Awesome */
+
+.fa {
+  color: $font-blue;
+}
+
+.fa-xl {
+  font-size: 150px;
+  color: $white;
+  line-height: 130px;
+}
+
+.fa-lg {
+  font-size: 48px;
+}
+
+.fa-md {
+  font-size: 24px;
+}
+
+.fa-sm {
+  font-size: 12px;
+}
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+  color: white;
+  background-color: $bg-blue;
+
+  .btn {
+    background-color: $bg-blue;
+    border: 1px solid $lt-blue;
+
+    &:hover {
+      color: $bg-blue;
+      background-color: white;
+      border: 1px solid $lt-blue;
+    }
+  }
+}
+
+
+
+/* Masthead */
+
+.masthead {
+  text-align: center;
+
+  .container {
+    margin: 74px auto;
+  }
+
+  p {
+    font-size: 30px;
+    margin: 30px auto;
+  }
+
+}
+
+
+/* Features and subscriptions */
+
+.feature {
+  height: 200px;
+  padding: 20px;
+  border-right: 1px solid $bg-gray;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+#subs {
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gray-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-gray;
+  height: 400px;
+  width: 45%;
+  padding: 30px 30px;
+  text-align: center;
+
+  h4 {
+    font-size: 24px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .big-text {
+    font-size: 40px;
+  }
+
+  #permonth {
+    font-size: 13px;
+    margin-top: -10px;
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+    border: 1px solid $font-blue;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+/* API Key Table */
+
+.table {
+  p {
+    margin: 0;
+  }
+}
+
+.reqs {
+  text-align: right;
+}
+
+.table-header {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.table-row {
+  border-bottom: 1px solid $bg-gray;
+  padding: 10px 0;
+  font-size: 20px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    width: 88%;
+    overflow: scroll;
+  }
+}
+
+.table-cols {
+  padding: 9px 15px;
+}
+
+.no-keys-yet {
+  margin-top: 10px;
+}
+
+/* Form */
+
+form {
+  margin: 5px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin: 0;
+    font-size: 16px;
+    min-width: 102px;
+    flex-grow: 1;
+  }
+
+  #key-name {
+    border: none;
+    margin: 0 14px 8px 0;
+    padding: 5px 5px 0px 2px;
+    border-bottom: 1px solid $bg-blue;
+    border-radius: 0;
+    background-color: $bg-gray;
+    font-size: 20px;
+    outline: none;
+    width: 50%;
+    flex-grow: 3;
+  }
+
+  .btn {
+    flex-grow: 1;
+  }
+}
+
+#error {
+  color: #E00213;
+  min-width: 80px;
+  max-width: 85px;
+  padding-right: 5px;
+}
+
+
+/* Medium screens */
+
+@media all and (max-width: 800px) {
+  .reqs {
+    display: none;
+  }
+}
+
+/* Small screens */
+
+@media all and (max-width: 500px) {
+
+  header {
+
+    nav a {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+  }
+
+/* Landing small screen styles */
+
+  .masthead {
+    margin-bottom: 20px;
+  }
+
+  .feature {
+    border-right: none;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+
+/* Dashboard small screen styles */
+
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background-color: $bg-blue;
+    border: 1px solid $bg-blue;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &.highlight {
+      padding: 16px 18px;
+    }
+
+    #key-name {
+      font-size: 18px;
+      width: 100%;
+      margin: 3px 14px 14px 0;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+
+  #error {
+    max-width: 135px;
+    margin-top: -10px;
+    margin-bottom: 4px;
+  }
+
+  .name-col {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .table-row {
+    font-size: 18px;
+  }
+
+  #subs {
+    flex-direction: column;
+    height: 720px;
+    align-content: space-between;
+    margin-top: 20px;
+  }
+
+  .gray-box {
+    width: 100%;
+    height: 350px;
+
+    h4 {
+      margin-top: 0;
+    }
+
+  }
+
+}
