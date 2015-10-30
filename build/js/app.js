@@ -315,7 +315,7 @@ var Landing = React.createClass({
           React.createElement(
             "p",
             null,
-            "An image server built for everyday use."
+            "An image server built for everyday use"
           ),
           React.createElement(
             "button",

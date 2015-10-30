@@ -189,7 +189,7 @@ var Landing = React.createClass({
         <div className="jumbotron masthead">
           <div className="container">
             <i className="fa fa-picture-o fa-xl" aria-hidden="true"></i>
-            <p>An image server built for everyday use.</p>
+            <p>An image server built for everyday use</p>
             <button onClick={actions.server.logIn} className="btn btn-lg">Sign up with Google</button>
           </div>
         </div>
