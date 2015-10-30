@@ -16,7 +16,7 @@ var Header = React.createClass({
           React.createElement(
             "h1",
             null,
-            "Simple Image Server"
+            "Tempus"
           ),
           this.props.hasUser && React.createElement(
             "nav",
@@ -286,7 +286,7 @@ var Documentation = React.createClass({
         React.createElement(
           "p",
           null,
-          "Simple Image Server uses JIMP for image manipulation. All features of JIMP are supported."
+          "Tempus uses JIMP for image manipulation. All features of JIMP are supported."
         ),
         React.createElement(
           "a",

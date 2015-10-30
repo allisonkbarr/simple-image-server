@@ -6,7 +6,7 @@ var Header = React.createClass({
       <div className="container-fluid">
         <header>
           <div id="flex-header">
-            <h1>Simple Image Server</h1>
+            <h1>Tempus</h1>
             { this.props.hasUser && <nav>
               <a href="javascript:;" onClick={actions.setLoggedInPage.bind(null, 'dashboard')} className={this.props.page === 'dashboard' && 'active'}>Dashboard</a>
               <a href="javascript:;" onClick={actions.setLoggedInPage.bind(null, 'documentation')} className={this.props.page === 'documentation' && 'active'}>Documentation</a>
@@ -173,7 +173,7 @@ var Documentation = React.createClass({
       <div id="documentation" className="container">
         <h2>Documentation</h2>
         <div className="highlight">
-          <p>Simple Image Server uses JIMP for image manipulation. All features of JIMP are supported.</p>
+          <p>Tempus uses JIMP for image manipulation. All features of JIMP are supported.</p>
           <a href="https://github.com/oliver-moran/jimp" target="_blank">JIMP documentation on GitHub</a>
         </div>
       </div>
